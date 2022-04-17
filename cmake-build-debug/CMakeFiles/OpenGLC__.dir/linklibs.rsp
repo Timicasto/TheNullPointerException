@@ -1,0 +1,1 @@
+  -LD:/OpenGLC++/lib-mingw-w64  -Wl,-Bstatic -lglfw3dll -lglfw3 -Wl,-Bdynamic -lglew32 -lopengl32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
