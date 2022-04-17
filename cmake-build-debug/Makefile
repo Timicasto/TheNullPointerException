@@ -128,6 +128,54 @@ OpenGLC__/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLC__.dir\build.make CMakeFiles/OpenGLC__.dir/build
 .PHONY : OpenGLC__/fast
 
+Shader.obj: Shader.cpp.obj
+.PHONY : Shader.obj
+
+# target to build an object file
+Shader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLC__.dir\build.make CMakeFiles/OpenGLC__.dir/Shader.cpp.obj
+.PHONY : Shader.cpp.obj
+
+Shader.i: Shader.cpp.i
+.PHONY : Shader.i
+
+# target to preprocess a source file
+Shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLC__.dir\build.make CMakeFiles/OpenGLC__.dir/Shader.cpp.i
+.PHONY : Shader.cpp.i
+
+Shader.s: Shader.cpp.s
+.PHONY : Shader.s
+
+# target to generate assembly for a file
+Shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLC__.dir\build.make CMakeFiles/OpenGLC__.dir/Shader.cpp.s
+.PHONY : Shader.cpp.s
+
+font_renderer.obj: font_renderer.cpp.obj
+.PHONY : font_renderer.obj
+
+# target to build an object file
+font_renderer.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLC__.dir\build.make CMakeFiles/OpenGLC__.dir/font_renderer.cpp.obj
+.PHONY : font_renderer.cpp.obj
+
+font_renderer.i: font_renderer.cpp.i
+.PHONY : font_renderer.i
+
+# target to preprocess a source file
+font_renderer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLC__.dir\build.make CMakeFiles/OpenGLC__.dir/font_renderer.cpp.i
+.PHONY : font_renderer.cpp.i
+
+font_renderer.s: font_renderer.cpp.s
+.PHONY : font_renderer.s
+
+# target to generate assembly for a file
+font_renderer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\OpenGLC__.dir\build.make CMakeFiles/OpenGLC__.dir/font_renderer.cpp.s
+.PHONY : font_renderer.cpp.s
+
 glad.obj: glad.c.obj
 .PHONY : glad.obj
 
@@ -185,6 +233,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... OpenGLC__
+	@echo ... Shader.obj
+	@echo ... Shader.i
+	@echo ... Shader.s
+	@echo ... font_renderer.obj
+	@echo ... font_renderer.i
+	@echo ... font_renderer.s
 	@echo ... glad.obj
 	@echo ... glad.i
 	@echo ... glad.s

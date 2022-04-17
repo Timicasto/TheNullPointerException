@@ -1,3 +1,0 @@
-"C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\OpenGLC__.dir/objects.a
-C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\ar.exe qc CMakeFiles\OpenGLC__.dir/objects.a @CMakeFiles\OpenGLC__.dir\objects1.rsp
-C:\PROGRA~1\JETBRA~1\CLION2~1.4\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\OpenGLC__.dir/objects.a -Wl,--no-whole-archive -o OpenGLC__.exe -Wl,--out-implib,libOpenGLC__.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\OpenGLC__.dir\linklibs.rsp

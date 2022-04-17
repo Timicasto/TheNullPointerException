@@ -5,9 +5,10 @@ set(CMAKE_C_STANDARD 99)
 set(CMAKE_CXX_STANDARD 23)
 
 include_directories("include")
+include_directories("glm")
 link_directories(lib-mingw-w64)
 
-add_executable(OpenGLC__ main.cpp glad.c)
+add_executable(OpenGLC__ main.cpp glad.c font_renderer.cpp font_renderer.h Shader.cpp Shader.h)
 
-target_link_libraries(OpenGLC__ libglfw3dll.a libglfw3.a glew32.lib opengl32)
+target_link_libraries(OpenGLC__ libglfw3dll.a libglfw3.a glew32.lib opengl32 freetype.lib)
 
