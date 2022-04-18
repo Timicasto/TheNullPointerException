@@ -7,6 +7,16 @@
 #include <iostream>
 
 #include <GL/glew.h>
+#include "freetype/freetype.h"
+#include "ext/vector_int2.hpp"
+#include <ft2build.h>
+
+typedef struct Character {
+	GLuint textureID;
+	glm::ivec2 size;
+	glm::ivec2 bearing;
+	GLuint advance;
+}Character;
 
 class Shader {
 public:
@@ -14,6 +24,7 @@ public:
 	Shader(const GLchar* vertexPath, const GLchar* fragmentPath);
 	void use();
 };
+
 
 
 #endif //OPENGLC___SHADER_H

@@ -3,7 +3,7 @@
 
 #include "GLFW/glfw3.h"
 
-#include "font_renderer.h"
+#include "font.h"
 #include "ext/matrix_clip_space.hpp"
 #include "gtc/type_ptr.hpp"
 
@@ -15,6 +15,8 @@ const GLuint HEIGHT = 480;
 
 std::map<GLchar, Character> charactersJBMono;
 std::map<GLchar, Character> charactersTransformer;
+
+GLuint textVao, textVbo;
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
 
@@ -84,7 +86,7 @@ int main() {
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 
-	Shader textShader("shaders/text.vsh", "shaders/text.fsh");
+	Shader textShader("text.vsh", "text.fsh");
 	glm::mat4 projection = glm::ortho(0.0F, static_cast<GLfloat>(WIDTH), 0.0F, static_cast<GLfloat>(HEIGHT));
 	textShader.use();
 	glUniformMatrix4fv(glGetUniformLocation(textShader.program, "projection"), 1, GL_FALSE, glm::value_ptr(projection));
@@ -98,7 +100,7 @@ int main() {
 		printf("{STDERR} Failed to Load font\n");
 	}
 	FT_Set_Pixel_Sizes(face, 0, 40);
-	genASCII(charactersTransformer, face);
+	genASCII(&charactersTransformer, face);
 	FT_Done_Face(face);
 	FT_Done_FreeType(ft);
 
@@ -115,7 +117,7 @@ int main() {
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
 	    glClear(GL_COLOR_BUFFER_BIT);
-	    renderText(textShader, "The NullPointerException", 160, 32, 1, glm::vec3(1, 1, 1));
+	    renderText(charactersTransformer, textShader, "The NullPointerException", 160, 32, 1, glm::vec3(1, 1, 1));
         glfwSwapBuffers(window);
     }
 

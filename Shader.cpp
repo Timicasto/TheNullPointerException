@@ -63,3 +63,7 @@ Shader::Shader(const GLchar *vertexPath, const GLchar *fragmentPath) : program(p
 void Shader::use() {
 	glUseProgram(this -> program);
 }
+
+
+
+

@@ -1,0 +1,26 @@
+# ninja log v5
+9	1398	6719076160089337	CMakeFiles/OpenGLC__.dir/Shader.cpp.obj	2886dc5e294f6c57
+4	1271	6719069469738748	CMakeFiles/OpenGLC__.dir/font_renderer.cpp.obj	376f56088d1367a4
+4	1065	6719076298220566	CMakeFiles/OpenGLC__.dir/main.cpp.obj	e01dd47a390182d9
+6	2037	6719069477347488	CMakeFiles/OpenGLC__.dir/glad.c.obj	5f15731d2c86f531
+7	1310	6719076159191732	CMakeFiles/OpenGLC__.dir/font.cpp.obj	ea779def2e5b684b
+10	872	6719077242011051	CMakeFiles/OpenGLC__.dir/font.cpp.obj	ea779def2e5b684b
+8	956	6719077242873842	CMakeFiles/OpenGLC__.dir/Shader.cpp.obj	2886dc5e294f6c57
+3	977	6719077489592393	CMakeFiles/OpenGLC__.dir/main.cpp.obj	e01dd47a390182d9
+11	1325	6719077696502366	CMakeFiles/OpenGLC__.dir/font.cpp.obj	ea779def2e5b684b
+9	1531	6719077698532029	CMakeFiles/OpenGLC__.dir/Shader.cpp.obj	2886dc5e294f6c57
+6	1803	6719077701269773	CMakeFiles/OpenGLC__.dir/main.cpp.obj	e01dd47a390182d9
+1803	1969	6719077702880531	OpenGLC__.exe	f2df7732617b77f4
+9	1492	6719078642703794	CMakeFiles/OpenGLC__.dir/main.cpp.obj	e01dd47a390182d9
+1492	1660	6719078644314542	OpenGLC__.exe	f2df7732617b77f4
+9	791	6719081405269108	CMakeFiles/OpenGLC__.dir/Shader.cpp.obj	2886dc5e294f6c57
+7	797	6719081405348889	CMakeFiles/OpenGLC__.dir/font.cpp.obj	ea779def2e5b684b
+5	1141	6719081408759778	CMakeFiles/OpenGLC__.dir/main.cpp.obj	e01dd47a390182d9
+1142	1345	6719081410684625	OpenGLC__.exe	f2df7732617b77f4
+8	917	6719082461265435	CMakeFiles/OpenGLC__.dir/Shader.cpp.obj	2886dc5e294f6c57
+7	938	6719082461474864	CMakeFiles/OpenGLC__.dir/font.cpp.obj	ea779def2e5b684b
+5	1518	6719082624450262	CMakeFiles/OpenGLC__.dir/main.cpp.obj	e01dd47a390182d9
+2	593	6719083011405481	CMakeFiles/OpenGLC__.dir/Shader.cpp.obj	2886dc5e294f6c57
+96	1677	6719090880964431	CMakeFiles/OpenGLC__.dir/font.cpp.obj	ea779def2e5b684b
+93	2061	6719090885103528	CMakeFiles/OpenGLC__.dir/main.cpp.obj	e01dd47a390182d9
+2078	2626	6719090890583935	OpenGLC__.exe	f2df7732617b77f4
