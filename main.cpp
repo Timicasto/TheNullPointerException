@@ -13,6 +13,8 @@
 const GLuint WIDTH = 854;
 const GLuint HEIGHT = 480;
 
+int selector = 0;
+
 std::map<GLchar, Character> charactersJBMono;
 std::map<GLchar, Character> charactersTransformer;
 
@@ -101,7 +103,14 @@ int main() {
 	}
 	FT_Set_Pixel_Sizes(face, 0, 40);
 	genASCII(&charactersTransformer, face);
+	FT_Face jbMono;
+	if (FT_New_Face(ft, "JetBrainsMono-Regular.ttf", 0,&jbMono)) {
+		printf("{STDERR} Failed to Load font\n");
+	}
+	FT_Set_Pixel_Sizes(jbMono, 0, 16);
+	genASCII(&charactersJBMono, jbMono);
 	FT_Done_Face(face);
+	FT_Done_Face(jbMono);
 	FT_Done_FreeType(ft);
 
 	glGenVertexArrays(1, &textVao);
@@ -117,8 +126,14 @@ int main() {
     while (!glfwWindowShouldClose(window)) {
         glfwPollEvents();
 	    glClear(GL_COLOR_BUFFER_BIT);
-	    renderText(charactersTransformer, textShader, "The NullPointerException", 160, 32, 1, glm::vec3(1, 1, 1));
-        glfwSwapBuffers(window);
+	    renderText(charactersTransformer, textShader, "The NullPointerException", 160, 400, 1, glm::vec3(1, 1, 1));
+	    renderText(charactersJBMono, textShader, "New start", 160, 232, 1, glm::vec3(0, 1, 0));
+	    renderText(charactersJBMono, textShader, "Load Save", 160, 216, 1, glm::vec3(0, 1, 0));
+	    renderText(charactersJBMono, textShader, "Create Profile", 160, 200, 1, glm::vec3(0, 1, 0));
+	    renderText(charactersJBMono, textShader, "Settings", 160, 184, 1, glm::vec3(0, 1, 0));
+	    renderText(charactersJBMono, textShader, "Quit", 160, 168, 1, glm::vec3(0, 1, 0));
+	    renderText(charactersJBMono, textShader, ">", 140, 232 - 16 * selector, 1, glm::vec3(1, 1, 1));
+		glfwSwapBuffers(window);
     }
 
     glfwTerminate();
@@ -126,7 +141,13 @@ int main() {
 }
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode) {
-    if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) {
-        glfwSetWindowShouldClose(window, GL_TRUE);
-    }
+    if (key == GLFW_KEY_DOWN && action == GLFW_PRESS) {
+		if (selector < 4) {
+			++selector;
+		}
+    } else if (key == GLFW_KEY_UP && action == GLFW_PRESS) {
+		if (selector > 0) {
+			--selector;
+		}
+	}
 }
