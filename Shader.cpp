@@ -1,5 +1,7 @@
 #include "Shader.h"
 
+#define GLEW_STATIC
+
 Shader::Shader(const GLchar *vertexPath, const GLchar *fragmentPath) : program(program) {
 	std::string vertexCode;
 	std::string fragmentCode;

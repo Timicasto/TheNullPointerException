@@ -1,0 +1,10 @@
+# ninja log v5
+12	4120	6720826629589999	CMakeFiles/OpenGLC__.dir/glad.c.obj	45ab0359e0852da0
+4	721	6720829530361407	CMakeFiles/OpenGLC__.dir/font.cpp.obj	417f9abc2c5d4f4c
+9	1277	6720829030872612	CMakeFiles/OpenGLC__.dir/Shader.cpp.obj	55b4950a6e2367ff
+0	2771	6720826616076134	CMakeFiles/OpenGLC__.dir/main.cpp.obj	e07500036dd76565
+0	280	6721353487470749	build.ninja	5e483dbf7dc8936f
+32	1987	6721397675732437	CMakeFiles/OpenGLC__.dir/Profile.cpp.obj	f7f21777c02f473b
+8	705	6721398691369481	CMakeFiles/OpenGLC__.dir/Profile.cpp.obj	f7f21777c02f473b
+2	1923	6721398703586815	CMakeFiles/OpenGLC__.dir/main.cpp.obj	e07500036dd76565
+3	2122	6721399617165928	CMakeFiles/OpenGLC__.dir/main.cpp.obj	e07500036dd76565

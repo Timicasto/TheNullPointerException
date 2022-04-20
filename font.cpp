@@ -1,6 +1,8 @@
 #include <ft2build.h>
 #include FT_FREETYPE_H
 
+#define GLEW_STATIC
+
 #include "font.h"
 
 

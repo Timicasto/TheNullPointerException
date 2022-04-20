@@ -6,7 +6,7 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.21"
@@ -19,7 +19,7 @@
 					]
 				}
 			],
-			"name" : "Release",
+			"name" : "Debug",
 			"projects" : 
 			[
 				{
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "OpenGLC__::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-OpenGLC__-Release-b4ed88a569d0b64a9b6e.json",
+					"jsonFile" : "target-OpenGLC__-Debug-fb4326d7d625214f95e7.json",
 					"name" : "OpenGLC__",
 					"projectIndex" : 0
 				}
@@ -49,7 +49,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "D:/OpenGLC++/cmake-build-release",
+		"build" : "D:/OpenGLC++/cmake-build-debug-mingw-1",
 		"source" : "D:/OpenGLC++"
 	},
 	"version" : 

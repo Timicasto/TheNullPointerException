@@ -77,6 +77,13 @@ build CMakeFiles/OpenGLC__.dir/Shader.cpp.obj: CXX_COMPILER__OpenGLC___Release D
   OBJECT_DIR = CMakeFiles\OpenGLC__.dir
   OBJECT_FILE_DIR = CMakeFiles\OpenGLC__.dir
 
+build CMakeFiles/OpenGLC__.dir/Profile.cpp.obj: CXX_COMPILER__OpenGLC___Release D$:/OpenGLC++/Profile.cpp || cmake_object_order_depends_target_OpenGLC__
+  DEP_FILE = CMakeFiles\OpenGLC__.dir\Profile.cpp.obj.d
+  FLAGS = -O3 -DNDEBUG -std=gnu++2a
+  INCLUDES = -ID:/OpenGLC++/include -ID:/OpenGLC++/glm
+  OBJECT_DIR = CMakeFiles\OpenGLC__.dir
+  OBJECT_FILE_DIR = CMakeFiles\OpenGLC__.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target OpenGLC__
@@ -85,9 +92,9 @@ build CMakeFiles/OpenGLC__.dir/Shader.cpp.obj: CXX_COMPILER__OpenGLC___Release D
 #############################################
 # Link the executable OpenGLC__.exe
 
-build OpenGLC__.exe: CXX_EXECUTABLE_LINKER__OpenGLC___Release CMakeFiles/OpenGLC__.dir/main.cpp.obj CMakeFiles/OpenGLC__.dir/glad.c.obj CMakeFiles/OpenGLC__.dir/font.cpp.obj CMakeFiles/OpenGLC__.dir/Shader.cpp.obj
+build OpenGLC__.exe: CXX_EXECUTABLE_LINKER__OpenGLC___Release CMakeFiles/OpenGLC__.dir/main.cpp.obj CMakeFiles/OpenGLC__.dir/glad.c.obj CMakeFiles/OpenGLC__.dir/font.cpp.obj CMakeFiles/OpenGLC__.dir/Shader.cpp.obj CMakeFiles/OpenGLC__.dir/Profile.cpp.obj
   FLAGS = -O3 -DNDEBUG
-  LINK_LIBRARIES = -Wl,-Bstatic  -lglfw3dll  -lglfw3  -Wl,-Bdynamic  -lglew32  -lopengl32  -lfreetype  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+  LINK_LIBRARIES = -Wl,-Bstatic  -lglfw3dll  -lglfw3  -Wl,-Bdynamic  -lglew32  -lglew32s  -lopengl32  -lfreetype  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   LINK_PATH = -LD:/OpenGLC++/lib-mingw-w64
   OBJECT_DIR = CMakeFiles\OpenGLC__.dir
   POST_BUILD = cd .

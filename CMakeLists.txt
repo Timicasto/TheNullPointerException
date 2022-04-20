@@ -8,7 +8,7 @@ include_directories("include")
 include_directories("glm")
 link_directories(lib-mingw-w64)
 
-add_executable(OpenGLC__ main.cpp glad.c font.cpp font.h Shader.cpp Shader.h)
+add_executable(OpenGLC__ main.cpp glad.c font.cpp font.h Shader.cpp Shader.h fields.h Profile.cpp Profile.h)
 
-target_link_libraries(OpenGLC__ libglfw3dll.a libglfw3.a glew32.lib opengl32 freetype.lib)
+target_link_libraries(OpenGLC__ libglfw3dll.a libglfw3.a glew32.lib glew32s.lib opengl32 freetype.lib)
 
