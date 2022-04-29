@@ -7,13 +7,13 @@
 
 
 void loadJBMono(FT_Face* face, FT_Library ft) {
-    if (FT_New_Face(ft, "JetBrainsMono-Regular.ttf", 0, *&face)) {
+    if (FT_New_Face(ft, "./JetBrainsMono-Regular.ttf", 0, *&face)) {
         printf("{STDERR} Failed to load font.\n");
     }
 }
 
 void loadTransformer(FT_Face* face, FT_Library ft) {
-    if (FT_New_Face(ft, "type style.ttf", 0, *&face)) {
+    if (FT_New_Face(ft, "./type style.ttf", 0, *&face)) {
         printf("{STDERR} Failed to load font.\n");
     }
 }

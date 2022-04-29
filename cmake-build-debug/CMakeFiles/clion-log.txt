@@ -1,4 +1,4 @@
-"C:\Program Files\JetBrains\CLion 2021.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug "-DCMAKE_MAKE_PROGRAM=C:/Program Files/JetBrains/CLion 2021.3.4/bin/ninja/win/ninja.exe" -G Ninja D:\OpenGLC++
+/opt/clion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=/usr/bin/cc -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - Unix Makefiles" /home/gezhiqiang/TheNullPointerException/TheNullPointerException
 -- Configuring done
 -- Generating done
--- Build files have been written to: D:/OpenGLC++/cmake-build-debug
+-- Build files have been written to: /home/gezhiqiang/TheNullPointerException/TheNullPointerException/cmake-build-debug

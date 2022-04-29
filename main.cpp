@@ -116,13 +116,13 @@ int main() {
 		printf("{STDERR} Could not initialize FreeType Library\n");
 	}
 	FT_Face face;
-	if (FT_New_Face(ft, "type style.ttf", 0, &face)) {
+	if (FT_New_Face(ft, "./type style.ttf", 0, &face)) {
 		printf("{STDERR} Failed to Load font\n");
 	}
 	FT_Set_Pixel_Sizes(face, 0, 40);
 	genASCII(&charactersTransformer, face);
 	FT_Face jbMono;
-	if (FT_New_Face(ft, "JetBrainsMono-Regular.ttf", 0, &jbMono)) {
+	if (FT_New_Face(ft, "./JetBrainsMono-Regular.ttf", 0, &jbMono)) {
 		printf("{STDERR} Failed to Load font\n");
 	}
 	FT_Set_Pixel_Sizes(jbMono, 0, 16);
@@ -204,7 +204,7 @@ void enterChar(int key) {
 	}
 }
 
-gender parseGender(const std::string& str) {
+Gender parseGender(const std::string& str) {
 	if (str == "M" || str == "MALE") {
 		return MALE;
 	} else if (str == "F" || str == "FEMALE") {

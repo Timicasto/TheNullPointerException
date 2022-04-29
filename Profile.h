@@ -3,7 +3,7 @@
 
 #include "string"
 
-typedef enum gender {
+typedef enum gend {
 	MALE,
 	FEMALE,
 	INTERSEX,
@@ -14,11 +14,11 @@ typedef enum gender {
 
 class Profile {
 public:
-	Profile(const std::string& basicString, const std::string& basicString1, gender gender1, int i, int i1, int i2);
+	Profile(const std::string& basicString, const std::string& basicString1, Gender gender1, int i, int i1, int i2);
 
 	std::string profileName;
 	std::string playerName;
-	gender gender;
+	Gender gender;
 	int age{};
 	int height{};
 	int weight{};

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.21)
+cmake_minimum_required(VERSION 3.19)
 project(OpenGLC__)
 
 set(CMAKE_C_STANDARD 99)
@@ -10,5 +10,5 @@ link_directories(lib-mingw-w64)
 
 add_executable(OpenGLC__ main.cpp glad.c font.cpp font.h Shader.cpp Shader.h fields.h Profile.cpp Profile.h)
 
-target_link_libraries(OpenGLC__ libglfw3dll.a libglfw3.a glew32.lib glew32s.lib opengl32 freetype.lib)
+target_link_libraries(OpenGLC__ glfw3 ${CMAKE_DL_LIBS} GLEW GL freetype assimp)
 
